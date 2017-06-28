@@ -1,0 +1,13 @@
+<div class="text-center">
+    <div class="paginator">
+    <span class="step-links">
+        {% if page.has_previous %}
+            <a href="?page={{ page.previous_page_number }}"><h4>Poprzednia</h4></a>
+        {% endif %}
+        <span class="current"><h4>Strona {{ page.number }} / {{ page.paginator.num_pages }}<h4></span>
+        {% if page.has_next %}
+            <a href="?page={{ page.next_page_number }}"><h4>Następna</h4></a>
+        {% endif %}
+    </span>
+    </div>
+</div>

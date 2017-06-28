@@ -1,0 +1,9 @@
+styleless
+*.less
+static/blog/vendor/font-awesome/less/
+static/startpage/vendor/font-awesome/less/
+blog/migrations/0004_post_image.py
+blog/migrations/__pycache__/0004_post_image.cpython-36.pyc
+.idea
+/__pycache__
+.idea

@@ -1,0 +1,287 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="Krzysztof Urban" content="Personal Trainer Website">
+
+    <title>Krzysztof Urban - Trener Personalny </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'startpage/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="{% static 'startpage/css/style.css' %}" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="{% static 'startpage/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+
+</head>
+
+<body id="page-top" class="index">
+<div id="skipnav"><a href="#maincontent">Skip to main content</a></div>
+
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand" href="#page-top">Trener urban</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#offer">Oferta</a>
+                </li>
+
+                <li class="page-scroll">
+                    <a href="#about">O mnie</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#specialization">Specjalizacje</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="/blog">Blog</a>
+                </li>
+                <li class="page-scroll">
+                    <a href="#contact">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container" id="maincontent" tabindex="-1">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="intro-text">
+                    <h1 class="name">WSTAWAJ!</h1>
+                    <hr class="line-light">
+                    <span class="skills">Wstań z krzesła i podnieś komfort swojego życia</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- offer Grid Section -->
+<section id="offer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Oferta</h2>
+                <hr class="line-light">
+                <h3> Napisz do mnie, zajmę się:</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 offer-item">
+                <div class="offer-text"><h4>Motywacją do działania</h4></div>
+                <img src="{% static 'startpage/img/offer/offer1.jpg' %}" class="img-responsive">
+            </div>
+            <div class="col-sm-3 offer-item">
+                <div class="offer-text"><h4>Planowaniem żywienia</h4></div>
+                <img src="{% static 'startpage/img/offer/offer2.jpg' %}" class="img-responsive" alt="Healthy food">
+            </div>
+            <div class="col-sm-3 offer-item">
+                <div class="offer-text"><h4>Przywróceniem sprawności</h4></div>
+                <img src="{% static 'startpage/img/offer/offer3.jpg' %}" class="img-responsive" alt="Man stretching">
+            </div>
+            <div class="col-sm-3 offer-item">
+                <div class="offer-text"><h4>Przyjazną atmosferą</h4></div>
+                <img src="{% static 'startpage/img/offer/offer4.jpg' %}" class="img-responsive" alt="Pink Kettlebell">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="success" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>O mnie</h2>
+                <hr class="line-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>Cześć! Mam na imię Krzysiek, jestem studentem poznańskiej Akademii Wychowania Fizycznego studiów
+                    magisterskich na kierunku Turystyki i rekreacji. </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="embed-responsive-16by9 embed-responsive">
+                    <iframe src="https://player.vimeo.com/video/178084953?title=0&byline=0&portrait=0" width="640"
+                            height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                            class="embed-responsive-item"></iframe>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center about-me-btn">
+                    <a href="#" class="btn btn-lg btn-outline about-btn">
+                        Napisz do mnie!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Specialization section -->
+
+<section id="specialization">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>W czym się specjalizuję</h2>
+                <hr class="line-light">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 specialization-item">
+                <h4>Sporty siłowe</h4>
+                <img src="{% static 'startpage/img/specialization/specialization1.png' %}" class="img-responsive">
+            </div>
+            <div class="col-sm-3 specialization-item">
+                <h4>Mobilizacja</h4>
+                <img src="{% static 'startpage/img/specialization/specialization2.png' %}" class="img-responsive"
+                     alt="Healthy food">
+            </div>
+            <div class="col-sm-3 specialization-item">
+                <h4>Rozciąganie</h4>
+                <img src="{% static 'startpage/img/specialization/specialization3.png' %}" class="img-responsive"
+                     alt="Man stretching">
+            </div>
+            <div class="col-sm-3 specialization-item">
+                <h4>Żywienie</h4>
+                <img src="{% static 'startpage/img/specialization/specialization4.png' %}" class="img-responsive"
+                     alt="Pink Kettlebell">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class=" col-lg-12">
+                    <div class="embed-responsive-16by9 embed-responsive ">
+                        <iframe src="https://player.vimeo.com/video/178250010?title=0&byline=0&portrait=0" width="640"
+                                height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen
+                                class="embed-responsive-item"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="success" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Jesteś zainteresowany? Napisz!</h2>
+                <hr class="line">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <form action="." class="form-template" method="POST">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Wysyłanie">Wyślij</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center">
+    <div class="footer-above">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3>Lokalizacja</h3>
+                    <p>Poznań</p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Social media</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Facebook</span><i
+                                    class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Google Plus</span><i
+                                    class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Twitter</span><i
+                                    class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Linked In</span><i
+                                    class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><span class="sr-only">Dribble</span><i
+                                    class="fa fa-fw fa-instagram"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3>Dane kontaktowe:</h3>
+                    <p>e-mail: <a href="mailto:k.urban@g.pl">k.urban@g.pl</a></p>
+                    <p>numer telefonu: <a href="callto:510293693">510293693</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    Copyright &copy; Krzysztof Urban 2017
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+<div class="scroll-top page-scroll hidden-sm hidden-xs hidden-lg hidden-md">
+    <a class="btn btn-primary" href="#page-top">
+        <i class="fa fa-chevron-up"></i>
+    </a>
+</div>
+
+
+<!-- jQuery -->
+<script src="{% static 'startpage/vendor/jquery/jquery.min.js' %}"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="{% static 'startpage/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+<!-- Theme JavaScript -->
+<script src="{% static 'startpage/js/freelancer.js' %}"></script>
+
+</body>
+
+</html>

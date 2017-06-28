@@ -1,0 +1,32 @@
+{% extends "blog/base.html" %}
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="above-form-area">
+                    {% if sent %}
+                        <h4>Twój email został wysłany</h4>
+                        <p>Link do artykułu "{{ post.title }}" został wysłany pod wskazany adres.</p>
+                    {% else %}
+                        <h4>Udostępnij artykuł "{{ post.title }}" przez email</h4>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="contact-form">
+                                    <form action="." method="post" class="form-template">
+                                        {{ form.as_p }}
+                                        {% csrf_token %}
+                                        <button name="submit" type="submit" id="contact-submit"
+                                                data-submit="...Wysyłanie">Wyślij
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    {% endif %}
+{% endblock %}
+
+
