@@ -124,7 +124,12 @@ MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
 # EMAIL CONFIG
 EMAIL_HOST = 'smtp.gmail.com'
+<<<<<<< HEAD
 EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = ''
+=======
+EMAIL_HOST_USER = 'djangotrenerurban@gmail.com'
+EMAIL_HOST_PASSWORD = 'ronia12345'
+>>>>>>> 51ef4fc... started new repo
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
